@@ -16,6 +16,12 @@ filterOption.addEventListener("click", filterTodo);
 function addTodo(e) {
   //Prevent natural behaviour
   e.preventDefault();
+
+  // prevent creating empty todo
+  if(todoInput.value.trim() === "") {
+    return;
+}
+
   //Create todo div
   const todoDiv = document.createElement("div");
   todoDiv.classList.add("todo");
