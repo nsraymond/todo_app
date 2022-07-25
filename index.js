@@ -19,6 +19,7 @@ function addTodo(e) {
 
   // prevent creating empty todo
   if(todoInput.value.trim() === "") {
+    alert('Sorry, you can not add an empty Todo. Please add a valid Todo!')
     return;
 }
 
